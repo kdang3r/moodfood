@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mood Recipe Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🍳 What's Your Mood?</h1>
+            <p>Select a mood and discover the perfect recipe for you</p>
+        </header>
+
+        <div class="mood-buttons" id="moodButtons">
+            <button class="mood-btn" data-mood="happy">😊 Happy</button>
+            <button class="mood-btn" data-mood="cozy">🛋️ Cozy</button>
+            <button class="mood-btn" data-mood="energetic">⚡ Energetic</button>
+            <button class="mood-btn" data-mood="comforting">🤗 Comforting</button>
+            <button class="mood-btn" data-mood="romantic">💕 Romantic</button>
+            <button class="mood-btn" data-mood="adventurous">🌍 Adventurous</button>
+            <button class="mood-btn" data-mood="relaxed">🧘 Relaxed</button>
+            <button class="mood-btn" data-mood="celebratory">🎉 Celebratory</button>
+        </div>
+
+        <div class="recipe-section" id="recipeSection" style="display: none;">
+            <div class="recipe-card">
+                <div class="recipe-header">
+                    <h2 id="recipeName"></h2>
+                    <button class="new-recipe-btn" id="newRecipeBtn">🔄 New Recipe</button>
+                </div>
+                <div class="recipe-content">
+                    <div class="recipe-info">
+                        <span id="recipeMood" class="mood-badge"></span>
+                        <span id="recipeTime" class="time-badge"></span>
+                    </div>
+                    <div class="recipe-description" id="recipeDescription"></div>
+                    <div class="recipe-details">
+                        <div class="ingredients">
+                            <h3>Ingredients</h3>
+                            <ul id="recipeIngredients"></ul>
+                        </div>
+                        <div class="instructions">
+                            <h3>Instructions</h3>
+                            <ol id="recipeInstructions"></ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
